@@ -23,3 +23,7 @@ Marco - Finished the flask-mongodb-docker template. This will serve as the seed 
 
 - D3js viz  
   *elaborate on this*
+ 
+Add a few more lines.
+Blah blah blah
+We can open this anywhere.
