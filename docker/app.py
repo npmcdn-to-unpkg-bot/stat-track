@@ -5,7 +5,9 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-client = MongoClient('THIS DOES NOT WORK YET')  # << fix this
+client = MongoClient(
+        os.environ['DB_1_PORT_27017_TCP_ADDR'],
+        27017)
 db = client.homedb
 
 
@@ -25,7 +27,7 @@ def new():
             description = request.form['description']
             )
     db.homedb.insert_one(item_doc)
-    return redirect(url_for('todo'))
+    return redirect(url_for('home'))
 
 
 
