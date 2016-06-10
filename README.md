@@ -23,3 +23,8 @@ Marco - Finished the flask-mongodb-docker template. This will serve as the seed 
 
 - D3js viz  
   *elaborate on this*
+
+#### MongoDB gui
+- I recommend this one  
+  https://github.com/mrvautin/adminMongo
+
