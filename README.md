@@ -15,7 +15,7 @@ Marco - Finished the flask-mongodb-docker template. This will serve as the seed 
 - Data cleaning script  
   This will transform the raw data into a usable form
 
-- Aggregtion script  
+- Aggregation script  
   This will aggregate the data in whichever way we see fit
 
 - Front end interface  
