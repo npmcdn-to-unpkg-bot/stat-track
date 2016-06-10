@@ -26,5 +26,5 @@ Marco - Finished the flask-mongodb-docker template. This will serve as the seed 
 
 #### MongoDB gui
 - I recommend this one  
-  https://github.com/mrvautin/adminMongo
+  https://github.com/mrvautin/adminMongo  
   See also: https://docs.mongodb.com/ecosystem/tools/administration-interfaces/
