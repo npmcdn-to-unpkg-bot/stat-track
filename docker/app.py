@@ -17,7 +17,7 @@ def home():
     _items = db.homedb.find()
     items = [item for item in _items]
 
-    return render_template('base.html', items=items)
+    return render_template('home.html', items=items)
 
 @app.route('/new', methods=['POST'])
 def new():

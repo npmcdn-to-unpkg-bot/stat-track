@@ -1,3 +1,4 @@
 *.swp
 *.pyc
 keysplease.py
+__pycache__/

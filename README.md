@@ -6,6 +6,10 @@
 ### June 9, 2016
 Marco - Finished the flask-mongodb-docker template. This will serve as the seed for a more complex app. Now that I've got a basic flask app talking with a new mongodb 3.0.1 db, I can start building on this. Some things to work on are an nginx proxy system and maybe some ambassador containers.
 #### To do
+- Immediate next steps  
+  I will create the ambassador architecture with the current structure of just two containers.  
+  Look into how a real time data pipeline could be implemented.
+
 - Twitter scraping script  
   This will feed into the Mongodb
 
