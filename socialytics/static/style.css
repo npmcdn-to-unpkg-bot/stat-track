@@ -15,8 +15,28 @@
   margin: auto;
 }
 
+#logininfo {
+  height: 350px;
+  width: 100%;
+  margin: auto;
+}
+
+.logindivider {
+  background: #181f2c;
+  height: 1px;
+  width: 100%;
+}
+
+.logintxt {
+  color: #fff;
+  font-size: 32;
+  padding: 80px;
+  text-align: center;
+  text-shadow: 1px 0px #ccc;
+}
+
 #imgcontainer {
-  background: url("{{ url_for('imgs', filename='profile.png') }}") #fff;
+  background: url("{{ url_for('static', filename='profile.png') }}") #fff;
   margin: auto;
   margin-top: 100px;
   height:160px;
@@ -32,6 +52,7 @@
   text-shadow: 1px 0px #ccc;
 }
 
+/*
 .biotxt {
   color: #fff;
   font-size: 12px;
@@ -41,7 +62,7 @@
   padding-right: 42px;
 }
 
-/*
+
 .biotxt:after {
   content: "";
   display: inline-block;
@@ -94,6 +115,15 @@
   text-shadow: 1px 0px #ccc;
 }
 
+.alerts {
+  background-image: url("{{ url_for('static', filename='alerts.png') }}");
+  left: 10px;
+  top: 29px;
+  width: 18px;
+  height: 19px;
+}
+
+
 #mainbox {
   background: #fff;
   padding: 20px;
@@ -105,13 +135,14 @@
 }
 
 .box {
+  box-sizing: border-box;
   background: #fff;
-  padding: 20px;
-  width: 15.96%;
+  padding: 30px;
+  width: 18.5%;
   height: 200px;
   border: 1px solid #e6e6e6;
   border-radius: 2px;
-  margin: 10px;
+  margin: .75%;
   float:left;
 }
 

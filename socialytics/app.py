@@ -11,11 +11,11 @@ def home():
     return render_template('index.html')
 
 @app.route('/reports.html')
-def contact():
+def report():
     return render_template('reports.html')
 
 @app.route('/profile.html')
-def contact():
+def profile():
     return render_template('profile.html')
 
 @app.route('/api.html')
