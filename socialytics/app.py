@@ -10,6 +10,14 @@ def hello_world():
 def home():
     return render_template('index.html')
 
+@app.route('/reports.html')
+def contact():
+    return render_template('reports.html')
+
+@app.route('/profile.html')
+def contact():
+    return render_template('profile.html')
+
 @app.route('/api.html')
 def api():
     return render_template('api.html')
