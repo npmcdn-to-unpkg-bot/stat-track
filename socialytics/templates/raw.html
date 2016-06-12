@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Socialytics</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div id="navbg">
+    <div id="imgcontainer"></div>
+    <div class="nametxt">Alex Dewhirst</div>
+    <div class="biotxt">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus vitae eros vel mattis. Nam ipsum ex, dignissim sed sagittis
+      eget, viverra in urna. Curabitur eget augue felis. Aenean ac tincidunt lacus, ut auctor sem.
+    </div>
+    <div class="divider"></div>
+    <div class="navcattxt">Main</div>
+    {% block nav %}
+    {% endblock %}
+  </div>
+  <div id="content">
+    <div id="banner">
+  {% block banner %}
+  {% endblock %}
+    </div>
+  {% block body %}
+  {% endblock %}
+    <div id="footer">
+      <div class="footertxt"><a href="http://127.0.0.1:5000/api.html">API</a></div>
+      <div class="footertxt"><a href="http://127.0.0.1:5000/contact.html">Contact</a></div>
+    </div>
+  </div>
+</body>
+</html>
