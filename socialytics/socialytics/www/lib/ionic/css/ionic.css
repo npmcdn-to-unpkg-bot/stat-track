@@ -9488,7 +9488,8 @@ a.button {
  * instead have colors which represent an emotion or generic theme.
  */
 .light, a.light {
-  color: #fff; }
+  color: #fff;
+  margin: auto;}
 
 .light-bg {
   background-color: #fff; }

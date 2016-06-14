@@ -1,1 +1,41 @@
 /* Empty. Add your own CSS if you like */
+.title {
+  color: #cdcdcd;
+}
+
+.light {
+  box-shadow: 1px 0px 2px #ccc;
+  background: #1b2433;
+}
+
+.item.item-avatar-left {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.item.item-body {
+  text-align: justify;
+}
+
+.list.card {
+
+}
+
+.tabs.tabs-icon-top {
+  background: #1b2433;
+}
+.icon.ion-person {
+  color: #fff;
+}
+.icon.ion-social-twitter {
+  color: #fff;
+}
+.icon.ion-social-instagram-outline {
+  color: #fff;
+}
+.icon.ion-social-facebook {
+  color: #fff;
+}
+.navtxt {
+  color: #fff;
+ }
