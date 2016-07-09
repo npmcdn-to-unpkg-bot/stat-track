@@ -1,11 +1,7 @@
-from flask import Flask, redirect, url_for, request, render_template
-import os
-
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
-
-
 
 
 @app.route('/')
