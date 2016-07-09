@@ -1,0 +1,16 @@
+# fig file for identidock-host
+redis_ambassador:
+  expose:
+    - "6379"
+  environment:
+    - REDIS_PORT_6379_TCP=tcp://$(dom ip redis-host):6379
+  image: amouat/ambassador
+dnmonster:
+  image: amouat/dnmonster:1.0
+noname:
+  link: 
+    - dnmonster:dnmonster
+    - redis_ambassador:redis
+  ports:
+    - "80:9090"
+  image: amouat/identidock:1.0

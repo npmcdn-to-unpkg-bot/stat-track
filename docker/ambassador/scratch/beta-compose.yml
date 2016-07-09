@@ -1,0 +1,8 @@
+flask:
+  build: 
+ambassador:
+  build: .
+  links:
+    - db
+db:
+  image: mongo:3.0.2
