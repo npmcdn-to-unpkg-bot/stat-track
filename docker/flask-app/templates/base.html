@@ -1,14 +1,69 @@
 <!doctype html>
+<html lang="en">
 <head>
-	<title>Foo Bar</title>
+	<title>Socialytics</title>
+  <meta charset="utf-8">
   <script src="/static/some.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='some.css') }}"/>
 </head>
 <body>
-    {% block form %}
+  <div class="left">
+
+    {% block profileinfo %}
     {% endblock %}
 
-    {% block items_block %}
+    <div class="leftdivider">
+    </div>
+    <div class="lefttext" style="color: #333b49!important; margin-top:15px; margin-left: 15px;">
+      Menu
+    </div>
+    <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
+      Home
+    </div>
+    <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
+      Profile
+    </div>
+    <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
+      Stats
+    </div>
+    <div class="leftdivider">
+    </div>
+    <div class="lefttext" style="color: #333b49!important; margin-top:15px; margin-left: 15px;">
+      Categories
+    </div>
+    <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
+      Reports
+    </div>
+    <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
+      Posts
+    </div>
+    <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
+      Visits
+    </div>
+    <div class="leftdivider">
+    </div>
+    <div class="lefttext" style="text-align:center; color: #333b49!important; margin-top:15px; margin-left: 15px;">
+      Add Categories
+    </div>
+  </div>
+  <div class="right">
+    <div class="rightbanner">
+
+    {% block banner %}
     {% endblock %}
+
+    </div>
+    <div class="rightinsidecontent">
+
+    {% block content %}
+    {% endblock %}
+
+    </div>
+    <div class="rightfooter">
+      <div class="rightfootertext">
+        API - Contact
+      </div>
+    </div>
+  </div>
 </body>
 </html>

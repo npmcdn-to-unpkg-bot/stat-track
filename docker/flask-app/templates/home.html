@@ -1,20 +1,40 @@
 {% extends 'base.html' %}
 
-{% block form %}
-  <div class="navbanner">
-    
-  </div>
-    <form action='/new' method='POST'>
-        <input type='text' name='name'></input>
-        <input type='text' name='description'></input>
-        <input type='submit' ></input>
-    </form>
+
+{% block profileinfo %}
+    <div class="profilepicturecontainer">
+      <div class="profilepicturecircle">
+        <!-- Profile Picture goes here -->
+      </div>
+    </div>
+    <div class="lefttext" style="text-align: center;">
+      <!-- Profile Name goes here -->
+      Alex Dewhirst
+    </div>
+{% endblock %}
+
+{% block banner %}
+    <div class="rightbannertext">
+      Dashboard
+    </div>
 {% endblock %}
 
 
-{% block items_block %}
-    {% for item in items %}
-        <h1> {{ item.name }} </h1>
-        <p> {{ item.description }} </p>
-    {% endfor %}
+{% block content %}
+    <div class="maincontent">
+      <!-- graph content goes here -->
+    </div>
+    <div class="maincontent">
+      <!-- graph content goes here -->
+    </div>
+    <div class="maincontent">
+      <!-- graph content goes here -->
+    </div>
+    <div class="maincontent">
+      <!-- graph content goes here -->
+    </div>
+    <div class="maincontent">
+      <!-- graph content goes here -->
+    </div>
+    <!-- for loop goes here -->
 {% endblock %}

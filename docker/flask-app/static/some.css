@@ -1,34 +1,117 @@
-body {
-  overflow: hidden;
-  width: 100%;
-  margin: 0px;
+html, body {
+  padding: 0;
+  margin: 0;
 }
 
-.navbanner {
-  height: 100px;
-  width: 100%;
-  margin: 0;
-  box-shadow: 0px 1px #ccc;
+body {
+  overflow: auto;
+  -ms-overflow-style:none;
+}
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+/* Left navigation of the website */
+
+.left {
+  background: #1b2433;
+  width: 200px;
+  float: left;
+  margin: auto;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+}
+
+.profilepicturecontainer {
+  width: inherit;
+  height: 200px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.profilepicturecircle {
+  margin: auto;
+  height:120px;
+  width:120px;
+  border-radius: 60px;
+  background: #ccc;
+}
+
+.lefttext {
+  font-family: 'Roboto Light';
+  font-size: 12pt;
+  color: #ffffff;
+}
+
+.leftdivider {
+  background: #181f2c;
+  height: 1px;
+  width: inherit;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.toprightcontent {
-  height: 300px;
-  width: 75%;
-  float: right;
+/* Right content of the website */
+
+.right {
+  background: #f2f2f2;
+  width: auto;
+  height: 100%;
+
 }
 
-.topleftcontent {
-  height: 300px;
-  width: 25%;
-  float: left;
+.rightbanner {
+  background: #ffffff;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #f2f2f2;
+  position: fixed;
+  z-index: 2;
 }
 
-.chart {
-  height:500px;
-  width:95%;
-  margin-top:20px;
-  position: relative;
-  margin: auto;
-  background: #ccc;
+.rightbannertext {
+  color: #1b2433;
+  font-family: 'Roboto Light';
+  font-size: 16pt;
+  padding-left: 215px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.rightinsidecontent {
+  height:auto;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.maincontent {
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  height: 200px;
+  margin-top:3px;
+  margin-left: 205px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.rightfooter {
+  background: #ffffff;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid #f2f2f2;
+  bottom: 0!important;
+  position: fixed;
+  z-index: 2;
+}
+
+.rightfootertext {
+  text-align: right;
+  color: #ccc;
+  font-family: 'Roboto Light';
+  font-size: 12pt;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
