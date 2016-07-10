@@ -8,10 +8,15 @@
 </head>
 <body>
   <div class="left">
-
-    {% block profileinfo %}
-    {% endblock %}
-
+    <div class="profilepicturecontainer">
+      <div class="profilepicturecircle">
+        <!-- Profile Picture goes here -->
+      </div>
+    </div>
+    <div class="lefttext" style="text-align: center;">
+      <!-- Profile Name goes here -->
+      Alex Dewhirst
+    </div>
     <div class="leftdivider">
     </div>
     <div class="lefttext" style="color: #333b49!important; margin-top:15px; margin-left: 15px;">
@@ -52,6 +57,9 @@
     {% block banner %}
     {% endblock %}
 
+      <div class="alert"></div>
+      <div class="settings"></div>
+      <div class="menu"></div>
     </div>
     <div class="rightinsidecontent">
 
@@ -60,8 +68,11 @@
 
     </div>
     <div class="rightfooter">
-      <div class="rightfootertext">
-        API - Contact
+      <div class="rightfootertext" style="float:left; margin-left:260px; ">
+        Privacy / Terms
+      </div>
+      <div class="rightfootertext" style="float:right; margin-right: 60px;">
+        <a href="{{ url_for('templates', filename='basetwo.html') }}">API</a> - Contact
       </div>
     </div>
   </div>
