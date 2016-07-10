@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import rethinkdb as r
 
 
-r.connect(HOST,PORT).repl()
+r.connect('45.55.172.73',32769).repl()
 # Get the HOST and PORT from the notes.
 
 
@@ -13,7 +13,7 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/basetwo')
+@app.route('/API')
 def API():
     return render_template('basetwo.html')
 
