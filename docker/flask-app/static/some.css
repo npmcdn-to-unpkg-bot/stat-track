@@ -12,6 +12,26 @@ body {
   display:none;
 }
 
+
+
+a:link {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #3cadff;
+}
+
 /* Left navigation of the website */
 
 .left {
@@ -109,6 +129,16 @@ body {
   margin-right: 25px;
 }
 
+.alertpopupbox {
+  background: #000;
+  margin-left: 350px;
+  margin-right: 150px;
+  height: 400px;
+  border-radius: 2px;
+  border: 1px solid #f2f2f2;
+  visibility: hidden;
+}
+
 .rightinsidecontent {
   height:auto;
   padding-top: 65px;
@@ -159,22 +189,71 @@ body {
   font-family: 'Roboto Light';
   line-height: 100px;
   font-weight: bold;
+  text-align: center;
+}
+
+.infocontainer {
+  width: inherit;
+  background: #ffffff;
+  height: 400px;
+}
+
+.infocontainerAPIimage {
+  background: #000;
+  float: left;
+  padding: 30px;
+  width: 150px;
+  height: 250px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+}
+
+.infocontainertext {
+  font-family: 'Roboto Light';
+  font-size: 12pt;
+  color: #1b2433;
+  float: right;
+  text-align: justify;
+  padding: 60px;
+  margin-right: 40px;
+  width: 50%;
 }
 
 .imageone {
   background: #ccc;
   width: inherit;
-  height:600px;
+  height:300px;
+}
+
+.circlecontainer {
+  text-align: center;
+  width: 100%;
 }
 
 .circlestats {
   background: none;
-  border: 1px solid #f2f2f2;
+  border: 2px solid #ccc;
   height: 180px;
   width: 180px;
   border-radius: 90px;
-  margin-left: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: static;
   display: inline-block;
+  margin: 20px;
+}
+
+.circletext {
+  line-height: 180px;
+  font-family: 'Roboto Light';
+  font-size: 16pt;
+}
+
+.circletitletext {
+  line-height: 60px;
+  font-family: 'Roboto Light';
+  font-size: 12pt;
 }
 
 .imagetwo {

@@ -3,6 +3,7 @@
 <head>
 	<title>Socialytics</title>
   <meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="/static/some.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='some.css') }}"/>
 </head>
@@ -23,13 +24,13 @@
       Menu
     </div>
     <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
-      Home
+      <a href="{{ url_for('home') }}">Home</a>
     </div>
     <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
-      Profile
+      <a href=" {{ url_for('profile') }} ">Profile</a>
     </div>
     <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
-      Stats
+      <a href=" {{ url_for('stats') }} ">Stats</a>
     </div>
     <div class="leftdivider">
     </div>
@@ -37,13 +38,13 @@
       Categories
     </div>
     <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
-      Reports
+      <a href=" {{ url_for('reports') }} ">Reports</a>
     </div>
     <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
-      Posts
+      <a href=" {{ url_for('posts') }} ">Posts</a>
     </div>
     <div class="lefttext" style="margin-top:15px; margin-left: 15px;">
-      Visits
+      <a href=" {{ url_for('visits') }} ">Visits</a>
     </div>
     <div class="leftdivider">
     </div>
@@ -57,7 +58,7 @@
     {% block banner %}
     {% endblock %}
 
-      <div class="alert"></div>
+    	<div class="alert"></div>
       <div class="settings"></div>
       <div class="menu"></div>
     </div>
@@ -69,10 +70,10 @@
     </div>
     <div class="rightfooter">
       <div class="rightfootertext" style="float:left; margin-left:260px; ">
-        Privacy / Terms
+        <a href=" {{ url_for('privacy')}}">Privacy</a> / <a href="{{url_for('terms')}}">Terms</a>
       </div>
       <div class="rightfootertext" style="float:right; margin-right: 60px;">
-        <a href="{{ url_for('static', filename='basetwo.html') }}">API</a> - Contact
+        <a href=" {{ url_for('API') }} ">API</a> - <a href=" {{ url_for('contact') }} ">Contact</a>
       </div>
     </div>
   </div>

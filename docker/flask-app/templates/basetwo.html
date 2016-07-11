@@ -1,4 +1,4 @@
-!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <title>Socialytics</title>
@@ -8,20 +8,10 @@
 </head>
 <body>
   <div class="navbar">
-
+    {% block navbar %}
+    {% endblock %}
   </div>
-  <div class="imageone">
-
-  </div>
-  <div class="circlestats"></div>
-  <div class="circlestats"></div>
-  <div class="circlestats"></div>
-  <div class="circlestats"></div>
-  <div class="imagetwo">
-
-  </div>
-  <div class="darkfooter">
-
-  </div>
+  {% block content %}
+  {% endblock %}
 </body>
 </html>
