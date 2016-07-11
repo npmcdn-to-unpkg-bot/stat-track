@@ -129,15 +129,7 @@ a:hover {
   margin-right: 25px;
 }
 
-.alertpopupbox {
-  background: #000;
-  margin-left: 350px;
-  margin-right: 150px;
-  height: 400px;
-  border-radius: 2px;
-  border: 1px solid #f2f2f2;
-  visibility: hidden;
-}
+
 
 .rightinsidecontent {
   height:auto;
