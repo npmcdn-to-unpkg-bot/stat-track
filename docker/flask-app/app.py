@@ -2,8 +2,10 @@ from flask import Flask, render_template
 import rethinkdb as r
 
 
-r.connect('45.55.172.73',32769).repl()
-# Get the HOST and PORT from the notes.
+HOST = '45.55.172.73'
+PORT = 32769
+
+r.connect(HOST,PORT).repl()
 
 
 app = Flask(__name__)
