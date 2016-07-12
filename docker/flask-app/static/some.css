@@ -129,8 +129,6 @@ a:hover {
   margin-right: 25px;
 }
 
-
-
 .rightinsidecontent {
   height:auto;
   padding-top: 65px;
@@ -182,6 +180,39 @@ a:hover {
   line-height: 100px;
   font-weight: bold;
   text-align: center;
+}
+
+.privacyandtermstext {
+  color: #1b2433;
+  font-family: 'Roboto Light';
+  font-size: 12pt;
+  padding: 80px;
+  line-height: 14pt;
+}
+
+.contactheader {
+  font-size: 14pt;
+  font-family: 'Roboto Light';
+  text-align: center;
+  color: #1b2433;
+  padding: 30px;
+}
+
+.contactboxes {
+  width: 50%;
+  height: 60px;
+  margin: auto;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.contactsubmit {
+  width: 50%;
+  height: 60px;
+  margin: auto;
+  border: 1px solid #10264b;
+  background: #1b2433;
+  margin-bottom: 20px;
 }
 
 .infocontainer {
