@@ -23,4 +23,15 @@ $(document).ready(function(){
   $(".menu").mouseout(function() {
     $(this).css("background", "url('/static/images/menu.png')");
   })
+
+  // Adding Vegas to the Landing page
+  $('body').vegas({
+    slides: [
+      { src: "/static/images/tablemedia.jpg" },
+      { src: "/static/images/naturemedia.jpg" },
+      { src: "/static/images/twittermedia.jpeg" },
+      { src: "/static/images/phonemedia.jpg" }
+    ],
+    transition: 'kenburns'
+  });
 })

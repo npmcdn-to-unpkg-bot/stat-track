@@ -4,7 +4,7 @@
 	<title>Socialytics</title>
   <meta charset="utf-8">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="/static/some.js" type="text/javascript"></script>
+  <script src=" {{ url_for('static', filename='some.js') }}" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='some.css') }}"/>
 </head>
 <body>
@@ -58,9 +58,9 @@
     {% block banner %}
     {% endblock %}
 
-    	<div class="alert"></div>
-      <div class="settings"></div>
-      <div class="menu"></div>
+    	<div class="alert" href="#alertpopup"></div>
+      <div class="settings" href="#settingspopup"></div>
+      <div class="menu" href="#menupopup"></div>
     </div>
     <div class="rightinsidecontent">
 
