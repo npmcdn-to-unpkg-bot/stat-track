@@ -17,7 +17,7 @@ def home():
 
 @app.route('/API')
 def API():
-    return render_template('basetwo.html')
+    return render_template('api.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
