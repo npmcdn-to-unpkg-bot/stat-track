@@ -1,4 +1,9 @@
+<<<<<<< HEAD:docker/flask-app/templates/api.html
 <html>
+=======
+<!doctype html>
+<html lang="en">
+>>>>>>> 766799e5159bd90d4b284fa9d91ba6e32e51cefd:docker/flask-app/templates/basetwo.html
 <head>
   <title>Socialytics</title>
   <meta charset="utf-8">
@@ -7,18 +12,11 @@
 </head>
 <body>
   <div class="navbar">
-
+    {% block navbar %}
+    {% endblock %}
   </div>
-  <div class="imageone">
-
-  </div>
-  <div class="circlestats"></div>
-  <div class="circlestats"></div>
-  <div class="circlestats"></div>
-  <div class="circlestats"></div>
-  <div class="imagetwo">
-
-  </div>
+  {% block content %}
+  {% endblock %}
   <div class="darkfooter">
 
   </div>
