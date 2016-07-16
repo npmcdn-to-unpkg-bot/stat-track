@@ -1,9 +1,0 @@
-# docker-compose file for redis-host
-real-redis:
-  image: redis:3
-real-redis-ambassador:
-  ports:
-    - "6379:6379"
-  link:
-    - real-redis:real-redis
-  image: amouat/ambassador
