@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Containerized
+{% endblock %}
+
+{% block body %}
+    <div class='desc'>
+        <h1>Docker, Flask, D3</h1>
+        <p>url: {{ attempt }}</p>
+        <p>data: {{ msg }}</p>
+        <p>date: 8/1/2016</p>
+        <p>
+        As it stands, this app is built from three containers:
+        </p>
+        <ul>
+            <li>web_ui - This generates the web page.</li>
+            <li>web_api - This negotiates the api call.</li>
+            <li>db - This stores the dummy data.</li>
+        </ul>
+        <p>
+        I've used the alpine linux container to build a base container for the two
+        web containers, but I've added python3 and flask to it. Each of the
+        containers in the service are included in the docker-compose.yml and thus,
+        the service can be started with a single terminal command. The database
+        is a rethinkdb 2.3 from docker hub.
+        </p>
+        <p>
+        The next steps are to:
+        </p>
+        <ul>
+            <li>Load real data into the db.</li>
+            <li>Aggregate the data.</li>
+            <li>Display the data on the ui.</li>
+            <li>Get user input about what data to get.</li>
+            <li>Make it look nice.</li>
+        </ul>
+    </div>
+
+    <div class='viz'>
+        <script src="{{ url_for('static', filename='js/data.js') }}" >
+        </script>
+        <script type='text/javascript'>
+            viz({{ msg }});
+        </script>
+    </div>
+{% endblock %}
+

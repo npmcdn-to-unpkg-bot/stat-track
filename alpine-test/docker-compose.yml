@@ -1,0 +1,16 @@
+version: "2"
+services:
+  web_ui:
+    build:
+      context: ./ui
+    ports:
+      - "32600:5000"
+    links:
+      - web_api
+  web_api:
+    build:
+      context: ./api
+    links:
+      - db
+  db:
+    image: rethinkdb:2.3
